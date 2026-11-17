@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "FRANCISCO E B SILVA"
+  },
+  "description": "Consultor sênior de vendas high ticket treinado nos 6 maiores livros de vendas e negociação do mundo. Domina SPIN Selling, Challenger Sale, Straight Line, negociação tática, gatilhos mentais e funis. Gera scripts, trata objeções e monta estratégias completas.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Other",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          " O cliente disse que está caro. Como respondo sem dar desconto?",
+          "Me escreva um script de prospecção para venda high ticket no B2B",
+          "Quais perguntas fazer na primeira reunião para descobrir a dor real?"
+        ],
+        "developerName": "FRANCISCO E B SILVA",
+        "displayName": "WOLF — Especialista em Vendas High Ticket",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "Consultor sênior de vendas high ticket treinado nos 6 maiores livros de vendas e negociação do mundo. Domina SPIN Selling, Challenger Sale, Straight Line, negociação tática, gatilhos mentais e funis. Gera scripts, trata objeções e monta estratégias completas.",
+        "shortDescription": "Consultor sênior de vendas high ticket treinado nos 6 maiores livros de vendas e negociação do mundo. Domina SPIN Selling, Challenger Sale, Straight Line, negociação tática, gatilhos mentais e funis. Gera scripts, trata objeções e monta est"
+      }
+    }
+  },
+  "name": "gpt-5acfd788c2d8896ba045f040a41a1a52",
+  "version": "0.4.1+bundle.acaadbec7d4e897b262a7b940a19142d"
+}

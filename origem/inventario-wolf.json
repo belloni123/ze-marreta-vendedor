@@ -1,0 +1,62 @@
+{
+  "origem": "WOLF — Especialista em Vendas High Ticket",
+  "versao": "0.4.1+bundle.acaadbec7d4e897b262a7b940a19142d",
+  "data_transferencia": "2026-11-17",
+  "documentos": [
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/100M_Money_Models_Resumo.md",
+      "sha256": "59c12718f97b67455ddab2ac9929d3d5544a3c96bbc8e2ac64cb4cb914e528a9",
+      "bytes": 79816
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/expert_secrets_russell_brunson.md",
+      "sha256": "36262a0c42aac110a99fe816d5ebc27e46427468c457cdf57ae712dcf9686554",
+      "bytes": 15356
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/gatilhos_mentais_gustavo_ferreira.md",
+      "sha256": "3128a7f95bf313b088af6003f2396a6c1fa9dfc64928acf830658f932a539603",
+      "bytes": 18246
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/guia_ia_vendas_instrucoes.md",
+      "sha256": "ac55d7699e2a0f4eb1b68ea997c953453a6dd56ef7132c87075884e2cd0ebaf4",
+      "bytes": 11210
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/inteligencia_vendas_sintetica.md",
+      "sha256": "63fe793c1fb29cd00dd77d3ba5cfa8151c753d7dbba1b8bbce630f715cf43234",
+      "bytes": 22276
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/negocie_como_se_sua_vida_dependesse_chris_voss.md",
+      "sha256": "37be4b7e6e67f2344b308a0933800860dad10b31f9e2cb795852baadc567d085",
+      "bytes": 16243
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/playbook_objecoes.md",
+      "sha256": "108c03e6b34988d5e30ea2128c79ad63fc44f65f62c0691355a3bf7535b4f8db",
+      "bytes": 15932
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/playbook_scripts_vendas.md",
+      "sha256": "04d21f1170e29de6792b28f51d8c634e4649eb7143c5015143b2d0f21d7b1031",
+      "bytes": 17828
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/spin_selling_neil_rackham.md",
+      "sha256": "04f6f174baf81cf13a0477328c033687a085c7fbfff574eff5fb3d2e138a833b",
+      "bytes": 16064
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/the_challenger_sale_matthew_dixon.md",
+      "sha256": "04ad96b40beb62b8998707ca6944483da4e5877ec7b1528db7736c1057af2266",
+      "bytes": 14994
+    },
+    {
+      "arquivo": "skills/ze-marreta-vendedor/references/way_of_the_wolf_jordan_belfort.md",
+      "sha256": "7bc84175404f8b5d9212b918f6153c782a90a2abb23ded1c0ae1661c48f07512",
+      "bytes": 15267
+    }
+  ]
+}
