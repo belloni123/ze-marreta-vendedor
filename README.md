@@ -28,6 +28,83 @@ Separe fatos, hipóteses e informações que ainda preciso levantar.
 
 Os nomes dos campos e os limites variam entre ferramentas. Use o recurso de instruções e conhecimento disponível na sua conta. As instruções do serviço continuam tendo precedência.
 
+## Usar no Claude
+
+Configure um Projeto para reutilizar as instruções e o conhecimento nas conversas dele. O procedimento segue a [documentação oficial de Projetos do Claude](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects).
+
+1. Baixe e extraia o ZIP deste repositório, conforme o início deste README.
+2. Acesse [Projetos do Claude](https://claude.ai/projects), clique em **Novo projeto / New Project** e dê o nome `ZE MARRETA - VENDEDOR`.
+3. Abra **Definir instruções do projeto / Set project instructions**. Copie o texto de [prompts/INSTRUCOES.md](prompts/INSTRUCOES.md), cole nesse campo e salve.
+4. Na área de conhecimento ou arquivos do projeto, clique em **+** e envie o arquivo extraído [dist/ZE-MARRETA-COMPLETO.md](dist/ZE-MARRETA-COMPLETO.md). Ele já reúne toda a base e o framework. Você também pode enviar os documentos separados da pasta `references`, em vez do arquivo completo.
+5. Abra uma conversa **dentro do projeto** e envie a frase abaixo, substituindo os campos entre colchetes.
+6. Peça que o Claude consulte o framework e identifique os documentos utilizados na resposta.
+
+**Frase para copiar e usar no Claude:**
+
+```text
+ZE MARRETA, consulte os arquivos deste projeto.
+Vendo [produto ou serviço] para [público B2B ou B2C],
+com ticket médio de R$ [valor], pelo canal [canal].
+Minha maior dificuldade é [problema].
+Use o framework comercial de sete etapas para diagnosticar o gargalo
+e me dar uma ação prioritária com um exemplo prático.
+Separe fatos, hipóteses e dados que ainda preciso fornecer.
+```
+
+## Usar na OpenAI — ChatGPT
+
+No ChatGPT, configure um Projeto com as instruções e os arquivos do ZE MARRETA. O procedimento segue a [documentação oficial de Projetos do ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt). Para instalar no **Codex**, use a seção de skills logo abaixo.
+
+1. Baixe e extraia o ZIP deste repositório.
+2. Acesse [ChatGPT](https://chatgpt.com), selecione **Novo projeto / New project** na barra lateral e dê o nome `ZE MARRETA - VENDEDOR`.
+3. No menu **•••** do projeto, abra **Configurações do projeto / Project settings** e adicione as instruções de [prompts/INSTRUCOES.md](prompts/INSTRUCOES.md).
+4. Na área de fontes ou arquivos do projeto, envie o arquivo extraído [dist/ZE-MARRETA-COMPLETO.md](dist/ZE-MARRETA-COMPLETO.md). Como alternativa, envie os documentos separados de `references`, respeitando o limite de arquivos da sua conta.
+5. Abra um chat **dentro desse projeto** e envie a frase abaixo com seus dados.
+6. Confira se a resposta consulta o material enviado e adapta a recomendação ao seu negócio.
+
+**Frase para copiar e usar no ChatGPT:**
+
+```text
+ZE MARRETA, siga as instruções deste projeto e consulte a base anexada.
+Meu negócio vende [produto ou serviço] para [público],
+com ticket médio de R$ [valor]. Nosso canal principal é [canal].
+Estamos travando em [problema], e temos estes dados: [dados e período].
+Aplique o framework de sete etapas, indique a etapa prioritária
+e entregue um plano de ação com indicador e um script que eu possa usar.
+Não invente números, cases ou promessas de resultado.
+```
+
+## Usar no Gemini — criar um Gem
+
+Um Gem permite salvar as instruções e os arquivos de referência do ZE MARRETA. O procedimento segue a [documentação oficial de Gems do Google](https://support.google.com/gemini/answer/15146780?hl=pt-BR).
+
+1. Baixe e extraia o ZIP deste repositório.
+2. No computador, acesse [Gemini](https://gemini.google.com), abra a barra lateral e selecione **Gems → Novo Gem**.
+3. Dê o nome `ZE MARRETA - VENDEDOR` e cole o conteúdo de [prompts/INSTRUCOES.md](prompts/INSTRUCOES.md) no campo de instruções.
+4. Em **Conhecimento → Adicionar arquivos**, envie o arquivo extraído [dist/ZE-MARRETA-COMPLETO.md](dist/ZE-MARRETA-COMPLETO.md). Ele contém instruções, os 11 documentos WOLF e o framework integrado.
+5. Clique em **Salvar**. Depois, abra o ZE MARRETA em **Meus Gems**.
+6. Envie a frase abaixo, preenchida com as informações do seu negócio.
+
+**Frase para copiar e usar no Gemini:**
+
+```text
+ZE MARRETA, use suas instruções e os arquivos de conhecimento deste Gem.
+Vendo [produto ou serviço] para [público], com ticket de R$ [valor].
+Meu canal de aquisição é [canal] e o principal problema é [problema].
+Diagnostique meu comercial com o framework de sete etapas.
+Explique qual etapa devo trabalhar primeiro, o que fazer agora
+e como medir o avanço. Inclua um exemplo prático adaptado ao meu negócio
+e indique quais informações ainda estão faltando.
+```
+
+## Usar em um chat comum ou resolver dificuldades de envio
+
+Se você não tiver acesso ao recurso de Projeto ou Gem, abra um chat comum, cole [as instruções](prompts/INSTRUCOES.md), anexe [o pacote completo](dist/ZE-MARRETA-COMPLETO.md) e envie uma das frases acima, trocando “projeto” ou “Gem” por “conversa”. Repita a configuração ao iniciar outra conversa.
+
+Se a plataforma recusar a extensão `.md`, salve uma cópia do arquivo como `.txt`, mantendo o texto, e tente enviá-la. Se o conteúdo exceder o limite, envie primeiro o framework e os documentos pertinentes ao pedido. Aguarde o processamento dos arquivos antes de começar.
+
+**Para ensinar o pessoal:** “Primeiro adicione as instruções e o conhecimento do ZE MARRETA à sua IA. Depois conte o que vende, para quem, por quanto e onde está travando. Peça que ele aplique o framework de sete etapas e entregue a primeira ação.”
+
 ## Instalar como skill em agentes compatíveis
 
 A pasta [skills/ze-marreta-vendedor](skills/ze-marreta-vendedor) contém o ponto de entrada `SKILL.md` e suas referências. Copie **a pasta inteira**, preservando a estrutura, para o diretório de skills aceito pelo seu agente.
